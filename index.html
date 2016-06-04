@@ -7,14 +7,22 @@
 
 </head>
 
-    <body ng-app="appConfig">
-  <h1>Listen to me</h1>
-     <div ng-view></div>
+    <body ng-app='mainApp'>
+      <div class='container'>
+        <h1>Eating at clean places.</h1>
+        <section ng-view></section>
+      </div>
 
+<!-- DEPENDENCIES -->
+<script src='node_modules/angular/angular.min.js'></script>
+<script src='node_modules/angular-route/angular-route.min.js'></script>
 
-<!-- angularjs script tags -->
-<script src></script>
+<!-- MAIN FILE THAT HANDLES ROUTES -->
+<script src="app.js"></script>
 
+<!-- SCRIPT CONTROLLERS -->
+<script src='controllers/loginCtrl.js'></script>
+<script src='controllers/search-viewCtrl.js'></script>
 
 </body>
 </html>
