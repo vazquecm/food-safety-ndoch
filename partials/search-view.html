@@ -6,8 +6,13 @@
 
   <div id="searchResults">
     <ul>
-      <li ng-repeat="venue in venues">
-        {{venue.name}} - {{venue.street}}: {{venue.score}}
+      <li ng-repeat="venue in venues | unique:'name' | orderBy:'year'">
+        <div class="rightData">
+          {{venue.score}}
+        </div>
+        <div class="leftData">
+          <span class="name">{{venue.name}}</span>, {{venue.street}}<br />Restaurant reviewed {{venue.date}}
+        </div>
       </li>
     </ul>
   </div>
