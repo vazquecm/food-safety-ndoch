@@ -5,10 +5,6 @@ app.config(['$routeProvider',
   function($routeProvider) {
 
     $routeProvider
-      .when('/login', {
-        templateUrl: 'partials/login.html',
-        controller: 'loginCtrl'
-      })
       .when('/search-view', {
         templateUrl: 'partials/search-view.html',
         controller: 'search-viewCtrl'
