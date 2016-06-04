@@ -1,0 +1,17 @@
+{
+  "name": "food-safety-ndoch",
+  "homepage": "https://github.com/vazquecm/food-safety-ndoch",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.6"
+  }
+}

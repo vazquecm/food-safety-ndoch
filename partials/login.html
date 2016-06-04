@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <h1>Eating out safely</h1>
+</nav>
+  <div class="wrapper">
+    <div class="row">
+    <div class='login-page'>
+
+    <!-- require email and check for valid format -->
+      <form class="form-group" name="userForm">
+        <div class="input-group">
+          <div class='container-login'>
+            <input class="form-control" type="email" name="email" ng-model="email" placeholder="Enter Email Address" required=""/>
+            <div ng-show="userForm.$submitted || userForm.email.$touched">
+              <span ng-show="userForm.email.$error.required">Email is required.</span>
+              <span ng-show="userForm.email.$error.email">Invalid email address.</span>
+            </div>
+
+          <!-- require password  -->
+            <input class="form-control" type="password" name="password" ng-model="password" placeholder="Enter Password" required=""/>
+            <div ng-show="userForm.$submitted || userForm.password.$touched">
+              <span ng-show="userForm.password.$error.required">Please enter your password</span>
+            </div>
+           </div>
+          </div>
+      </form>
+        <div>
+          <button type="submit" id="btn-xl" class="btn btn-default" ng-click="login()" ng-disabled="userForm.$invalid">Login</button>
+        </div>
