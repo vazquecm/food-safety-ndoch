@@ -1,0 +1,30 @@
+/*****************
+GENERAL
+*****************/
+
+body {
+	margin: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #ececec;
+}
+
+ul {
+	list-style: none;
+}
+
+
+/*****************
+HEADER
+*****************/
+
+h1 {
+	font-size: 45px;
+}
+
+.header {
+	background-color: #6478BF;
+}
+
