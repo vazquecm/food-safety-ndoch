@@ -1,4 +1,15 @@
-<div>
-  <button type="button"></button>
+<div ng-controller="search-viewCtrl">
+  <div id="searchForm">
+    <input type="text" id="searchTopic" placeholder="Enter search term">
+    <a type='button'><button ng-click="getResults()">SEARCH</button></a>
+  </div>
+
+  <div id="searchResults">
+    <ul>
+      <li ng-repeat="venue in venues">
+        {{venue.name}} - {{venue.street}}: {{venue.score}}
+      </li>
+    </ul>
+  </div>
 </div>
 
