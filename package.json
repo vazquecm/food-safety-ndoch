@@ -18,6 +18,7 @@
   "homepage": "https://github.com/vazquecm/food-safety-ndoch#readme",
   "dependencies": {
     "angular": "^1.5.6",
+    "angular-filter": "^0.5.8",
     "angular-route": "^1.5.6"
   }
 }
