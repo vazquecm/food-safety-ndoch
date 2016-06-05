@@ -1,6 +1,6 @@
 <div ng-controller="search-viewCtrl" class="searching">
   <div id="searchForm">
-    <input type="text" id="searchTopic" placeholder="Enter restaurant/food">
+    <input type="text" id="searchTopic" placeholder="Enter restaurant/food" ng-keypress="returnKey($event)">
     <a type='button'><button ng-click="getResults()">SEARCH</button></a>
   </div>
 
