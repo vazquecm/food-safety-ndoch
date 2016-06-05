@@ -1,6 +1,12 @@
 app.controller("search-viewCtrl",
   ["$scope", "$http", function($scope, $http) {
 
+    $scope.returnKey = function(keyEvent) {
+        if (keyEvent.which === 13) {
+          $scope.getResults();
+      }
+    };
+
     $scope.getResults = function() {
       var thing = document.getElementById("searchTopic").value.toLowerCase();
 
