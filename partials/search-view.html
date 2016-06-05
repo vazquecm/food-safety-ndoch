@@ -1,6 +1,6 @@
-<div ng-controller="search-viewCtrl">
+<div ng-controller="search-viewCtrl" class="searching">
   <div id="searchForm">
-    <input type="text" id="searchTopic" placeholder="Enter search term">
+    <input type="text" id="searchTopic" placeholder="Enter restaurant/food">
     <a type='button'><button ng-click="getResults()">SEARCH</button></a>
   </div>
 
@@ -11,7 +11,7 @@
           {{venue.score}}
         </div>
         <div class="leftData">
-          <span class="name">{{venue.name}}</span>, {{venue.street}}<br />Restaurant reviewed {{venue.date}}
+          <span class="name">{{venue.name}}</span>, {{venue.street}}<br /><span class="review">Restaurant reviewed {{venue.date}}</span>
         </div>
       </li>
     </ul>
